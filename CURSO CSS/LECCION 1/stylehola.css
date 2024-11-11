@@ -1,0 +1,51 @@
+#titulo {
+
+color:tomato;
+}
+
+p.especial {
+    color: mediumseagreen;
+}
+
+p.texto {
+    color: slateblue;
+}
+
+div p {
+    color:aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    color: black;
+}
+
+.color {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+    background-color: rgba(255,0,0);
+    /*opacity: 0.3;*/
+    height: 200px;
+    background: #f00 url("coffee.png") repeat-y center bottom / 100px 100px;
+}  
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+    overflow: scroll;
+    outline: 10px solid black;
+}
+/*esto es un comentario*/
