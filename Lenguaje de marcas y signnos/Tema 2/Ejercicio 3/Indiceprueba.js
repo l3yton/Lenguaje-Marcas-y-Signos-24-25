@@ -6,7 +6,7 @@ function toggleMenu(id) {
 function toggleMenu(id) {
     const submenu = document.getElementById(id);
 
-    // Alternar la clase "open"
+    
     if (submenu.classList.contains('open')) {
         submenu.classList.remove('open');
     } else {
