@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Frames</title>
+</head>
+<body>
+    <p>Frame 1</p>
+    <iframe width="300" height="250" src="https://www.dgt.es/inicio/" frameborder="1" scrolling="yes" id="framel"></iframe>
+    <p>Frame 2</p>
+    <iframe width="500" height="350" src="https://www.dgt.es/inicio/" frameborder="2" scrolling="no" id="frame211"></iframe>    
+</body>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente */
+        justify-content: center; /* Centrar verticalmente */
+        height: 100vh; /* Altura de toda la ventana */
+        margin: 0;
+    }
+
+    iframe {
+        margin: 10px; /* Espaciado entre frames */
+    }
+</style>
+</html>
