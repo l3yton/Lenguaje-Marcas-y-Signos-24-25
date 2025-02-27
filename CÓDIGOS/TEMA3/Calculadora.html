@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <!-- Contenedor principal de la calculadora -->
+    <div id="container" class="container">
+        <!-- Muestra el resultado -->
+        <div class="result">
+            <h1>0</h1> <!-- Muestra el valor actual, 0 por defecto -->
+        </div>
+
+        <!-- Contenedor para los botones de la calculadora -->
+        <div class="numbers">
+            <!-- Fila 1: Botón de reinicio, paréntesis y operadores -->
+            <div id="off-btn" class="item" style="background-color: rgb(236, 185, 73);">AC</div> <!-- Botón para reiniciar -->
+            <div class="item" style="background-color: rgb(167, 127, 127);">( )</div> <!-- Botón para paréntesis -->
+            <div class="item" style="background-color: rgb(167, 127, 127);">%</div> <!-- Botón para porcentaje -->
+            <div class="item" style="background-color: rgb(244, 158, 158);">÷</div> <!-- Botón para división -->
+
+            <!-- Fila 2: 7, 8, 9 y multiplicar -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">7</div> <!-- Número 7 -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">8</div> <!-- Número 8 -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">9</div> <!-- Número 9 -->
+            <div class="item" style="background-color: rgb(244, 158, 158);">x</div> <!-- Botón para multiplicar -->
+
+            <!-- Fila 3: 4, 5, 6 y restar -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">4</div> <!-- Número 4 -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">5</div> <!-- Número 5 -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">6</div> <!-- Número 6 -->
+            <div class="item" style="background-color: rgb(244, 158, 158);">-</div> <!-- Botón para restar -->
+
+            <!-- Fila 4: 1, 2, 3 y sumar -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">1</div> <!-- Número 1 -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">2</div> <!-- Número 2 -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">3</div> <!-- Número 3 -->
+            <div class="item" style="background-color: rgb(244, 158, 158);">+</div> <!-- Botón para sumar -->
+
+            <!-- Fila 5: 0, coma, borrar y calcular -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">0</div> <!-- Número 0 -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">,</div> <!-- Botón para coma decimal -->
+            <div class="item" style="background-color: rgb(56, 56, 56);">⌫</div> <!-- Botón para borrar -->
+            <div class="item" style="background-color: rgb(224, 59, 59);">=</div> <!-- Botón para calcular el resultado -->
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- CSS -->
+
+/* Importa la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+html, body {
+    font-family: "Inter", sans-serif; /* Usa fuente "Inter" en todo el documento */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    height: 100%; /* Ocupa todo el alto de la ventana */
+    display: flex; 
+    justify-content: center; 
+    color: white; /* Define el color del texto */
+}
+
+/* Estilo principal del contenedor */
+.container {
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(22, 22, 22); /* Fondo oscuro */
+    display: flex; 
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+/* Sección que muestra los resultados */
+.result {
+    width: 100%; 
+    height: 30%; 
+    display: flex; 
+    justify-content: end; /* Alinea el contenido al final horizontalmente */
+    align-items: end; /* Alinea el contenido al final verticalmente */
+}
+
+/* Estilo resultados */
+.result h1 {
+    margin: 20px; /* Espacio alrededor del texto */
+    font-size: 100px; /* Tamaño de fuente */
+}
+
+/* Contenedor botones */
+.numbers {
+    width: 100%; 
+    height: 70%; 
+    display: grid; /* Usa diseño de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas iguales */
+    grid-template-rows: repeat(5, 1fr); /* Divide en 5 filas iguales */
+}
+
+/* Estilo botones */
+.item {
+    background-color: orange; /* Color de fondo de los botones */
+    border-radius: 30px; /* Bordes redondeados */
+    display: grid; /* Centra el contenido */
+    place-items: center; /* Centra horizontal y verticalmente */
+    margin: 5px; 
+    font-size: 30px; 
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
