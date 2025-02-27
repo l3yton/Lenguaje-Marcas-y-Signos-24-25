@@ -1,0 +1,37 @@
+<!-- XML -->
+<?xml version="1.0" encoding='UTF-8'?>
+<?xml-stylesheet type="text/css" href="examenlenguaje.css"?>
+<empresa>
+<empleado>
+<nombre>Ana</nombre>
+<apellido>García</apellido>
+<edad>30</edad>
+<departamento>Ventas</departamento>
+<cargo>Ejecutivo de ventas</cargo>
+</empleado>
+<empleado>
+<nombre>Luis</nombre>
+<apellido>Rodríguez</apellido>
+<edad>45</edad>
+<departamento>Finanzas</departamento>
+<cargo>Analista financiero</cargo>
+</empleado>
+<empleado>
+<nombre>María</nombre>
+<apellido>Lopez</apellido>
+<edad>28</edad>
+<departamento>Marketing</departamento>
+<cargo>Especialista en redes sociales</cargo>
+</empleado>
+</empresa>
+
+<!-- CSS -->
+nombre {
+background-color: lightblue;
+}
+departamento {
+color: red;
+}
+cargo {
+font-style: italic;
+}
