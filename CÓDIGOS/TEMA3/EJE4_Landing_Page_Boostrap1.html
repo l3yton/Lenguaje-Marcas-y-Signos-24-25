@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page con Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>1º DAW<h1>
+    </header>
+
+    <!-- Sección Principal -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://blog.templatetoaster.com/wp-content/uploads/2020/05/Bootstrap-5-Facebbok.png" class="img-fluid" alt="Imagen de ejemplo">
+            </div>
+            <div class="col-md-6">
+                <h1>Bienvenido a mi Landing Page</h1>
+                <p>Me llamo Gonzalo Vargas Leyton, estudiante de 1ºDAW y esta es una breve descripción de lo que ofrece mi sitio. Utilizando el sistema de rejilla de Bootstrap 5, podemos crear diferentes diseños.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cuatro Apartados -->
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="p-4 border">Apartado 1</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 border">Apartado 2</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 border">Apartado 3</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 border">Apartado 4</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center">Contacto</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
