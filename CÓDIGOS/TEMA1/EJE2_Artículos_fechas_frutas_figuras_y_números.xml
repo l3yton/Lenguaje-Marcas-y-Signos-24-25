@@ -1,0 +1,91 @@
+<!-- CÓDIGO ARTÍCULOS XML-->
+<?xml-stylesheet type="text/css" href="ARTICULOS.css"?>
+<articulos>
+<articulo>
+<nombre>Sofá</nombre>
+<precio>642</precio>
+</articulo>
+<articulo>
+<nombre>Mesa</nombre>
+<precio>305</precio>
+</articulo>
+<articulo>
+<nombre>Lámpara</nombre>
+<precio>89</precio>
+</articulo>
+</articulos>
+
+<!-- CÓDIGO ARTÍCULOS CSS -->
+nombre {
+color: blue;
+font-size: 20px;
+}
+precio {
+color: green;
+font-size: 28px;
+}
+
+<!-- CÓDIGO FECHAS XML-->
+<?xml-stylesheet type="text/css" href="fechast.css"?>
+<fechas>
+<fecha>
+<dia>12</dia>
+<mes>enero</mes>
+</fecha>
+<fecha>
+<dia>7</dia>
+<mes>abril</mes>
+</fecha>
+<fecha>
+<dia>25</dia>
+<mes>octubre</mes>
+</fecha>
+</fechas>
+
+<!-- CÓDIGO FECHAS CSS -->
+nombre {
+color:brown;
+font-size:38px
+}
+precio {
+color:magenta;
+font-size:30px
+}
+
+<!-- CÓDIGO FRUTAS XML-->
+<?xml version="1.0" encoding="UTF-8"?>
+<frutas>
+<fruta>
+<nombre>cereza</nombre>
+</fruta>
+<fruta>
+<nombre>naranja</nombre>
+</fruta>
+</frutas>
+
+<!-- CÓDIGO FIGURAS XML-->
+<?xml version="1.0" encoding="UTF-8"?>
+<figuras>
+<figura_plana>
+<nombre>cuadrado</nombre>
+<lados>4</lados>
+</figura_plana>
+<figura_plana>
+<nombre>triángulo</nombre>
+<lados>3</lados>
+</figura_plana>
+<figura_tridimensional>
+<nombre>cubo</nombre>
+<aristas>12</aristas>
+<caras>6</caras>
+<figura_tridimensional>
+<figuras>
+
+<!-- CÓDIGO NÚMEROS XML-->
+<?xml version="1.0" encoding="UTF-8"?>
+<numeros>
+<numero valor="1" letra1="u" letra2="n" letra3="o">1</numero>
+<numero valor="2" letra1="d" letra2="o" letra3="s">22</numero>
+<numero valor="6" letra1="s" letra2="e" letra3="i" letra4="s">666666</numero>
+</numeros>
+
