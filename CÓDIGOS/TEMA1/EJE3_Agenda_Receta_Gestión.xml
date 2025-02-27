@@ -1,0 +1,109 @@
+<!-- AGENDA -->
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+<persona>
+<nombre>Maria</nombre>
+<apellidos>Pérez Gómez</apellidos>
+<dirección>Calle del Correo</dirección>
+<telefonos>
+<telefono tipo="móvil">653225678</telefono>
+<telefono tipo="casa">956345678</telefono>
+<telefono tipo="trabajo">758384754</telefono>
+</telefonos>
+</persona>
+<persona>
+<nombre>Juan</nombre>
+<apellido>Martínez Gallego</apellido>
+<dirección>Calle Banda Playa</dirección>
+<telefonos>
+<telefono tipo="movil">634523658</telefono>
+<telefono tipo="casa">956364756</telefono>
+<telefono tipo="trabajo">956842234</telefono>
+</telefonos>
+</persona>
+</agenda>
+
+<!-- RECETA  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<recetas>
+<receta>
+<nombre>sopa de cebolla</nombre>
+<personas>4</personas>
+<ingredientes>
+<ingrediente>
+<nombre>cebolla</nombre>
+<cantidad unidad="kg">1</cantidad>
+<nombre>caldo de carne</nombre>
+<cantidad unidad="l">2</cantidad>
+<nombre>mantequilla</nombre>
+<cantidad unidad="gr">100</cantidad>
+<nombre>harina</nombre>
+<cantidad unidad="cucharada">1</cantidad>
+<nombre>queso emmental suizo o gruyére rallado</nombre>
+<cantidad unidad="gr">100</cantidad>
+<nombre>pan tostado en rebanadas</nombre>
+<cantidad></cantidad>
+<nombre>tomillo</nombre>
+<cantidad></cantidad>
+<nombre>hoja de laurel</nombre>
+<cantidad>1</cantidad>
+<nombre>pimienta</nombre>
+<cantidad></cantidad>
+</ingrediente>
+</ingredientes>
+<proceso>
+<paso>Pelar y partir las cebollas en rodajas finas.</paso>
+<paso>Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que
+estén transparentes sin dorarse.</paso>
+<paso>Añadir la harina sin dejar de remover.</paso>
+<paso>Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</paso>
+<paso>Dejar cocer a fuego lento durante unos 15 minutos.</paso>
+<paso>Poner las rebanadas de pan encima, espolvorear el queso y gratinar
+al horno.</paso>
+</proceso>
+</receta>
+</recetas>
+
+<!-- GESTIÓN -->
+<?xml version="1.0" encoding="UTF-8"?>
+<DAM>
+<módulos>
+<módulo>
+<nombre>Lenguaje de Marcas y Sistemas de Gestión de Información</nombre>
+<horas_semanales>4 horas</horas_semanales>
+<asistencia>obligatoria</asistencia>
+<duración>
+<inicio>15-09-2010</inicio>
+<fin>30-06-2011</fin>
+</duración>
+<alumnos_Matriculados>
+<alumno>
+<nombre>Ana Fernández Gutiérrez</nombre>
+<nif>789654321</nif>
+<contacto>
+<teléfono>789654321</teléfono>
+<email>ana.fdezgtrrez@hotmail.com</email>
+<dirección>
+<CP>39302</CP>
+<calle>C/ El Percebe, 13 Santander</calle>
+</dirección>
+<información>No hay información sobre las faltas de asistencia o sus notas hasta el momento.</información>
+</contacto>
+</alumno>
+<alumno>
+<nombre>Pepito Grillo</nombre>
+<nif>98765432H</nif>
+<contacto>
+<teléfono>656566555</teléfono>
+<email>yhyh@yahoo.com</email>
+<dirección>
+<CP>39401</CP>
+<calle>Avd. El Pez, 5 de Suances</calle>
+</dirección>
+<información>Su nota es “apto” y no tiene faltas de asistencia.</información>
+</contacto>
+</alumno>
+</alumnos_Matriculados>
+</módulo>
+</módulos>
+</DAM>
