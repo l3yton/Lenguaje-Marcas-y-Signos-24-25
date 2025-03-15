@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Párrafos con Botones</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="ocultarPares">Ocultar pares</button>
+        <button id="ocultarImpares">Ocultar impares</button>
+        <button id="mostrarPares">Mostrar pares</button>
+        <button id="mostrarImpares">Mostrar impares</button>
+    </div>
+
+    <div>
+        <p>Este es el Párrafo 1 de prueba (Impar)</p>
+        <p>Este es el Párrafo 2 de prueba (Par)</p>
+        <p>Este es el Párrafo 3 de prueba (Impar)</p>
+        <p>Este es el Párrafo 4 de prueba (Par)</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Ocultar párrafos pares
+            $('#ocultarPares').click(function() {
+                $('p:nth-child(even)').hide();
+            });
+
+            // Ocultar párrafos impares
+            $('#ocultarImpares').click(function() {
+                $('p:nth-child(odd)').hide();
+            });
+
+            // Mostrar párrafos pares
+            $('#mostrarPares').click(function() {
+                $('p:nth-child(even)').show();
+            });
+
+            // Mostrar párrafos impares
+            $('#mostrarImpares').click(function() {
+                $('p:nth-child(odd)').show();
+            });
+        });
+    </script>
+</body>
+</html>
