@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Caja</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #miCaja {
+            width: 300px;
+            height: 150px;
+            background-color: #4CAF50; /* Color inicial */
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="miCaja">Pasa el ratón por encima</div>
+
+    <script>
+        $(document).ready(function() {
+            // Cambiar el color al pasar el ratón por encima
+            $('#miCaja').mouseenter(function() {
+                $(this).css('background-color', '#FF5733'); // Cambia el color de fondo
+            });
+
+            // Restaurar el color al sacar el ratón
+            $('#miCaja').mouseleave(function() {
+                $(this).css('background-color', '#4CAF50'); // Vuelve al color original
+            });
+        });
+    </script>
+
+</body>
+</html>
