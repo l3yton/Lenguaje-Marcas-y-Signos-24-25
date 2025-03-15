@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora Profesional con jQuery</title>
+  <!-- Fuente moderna de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Reset de estilos y configuración base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .calculator {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .calculator h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .calculator p {
+      margin: 15px 0 5px;
+      color: #555;
+      font-size: 16px;
+    }
+    .calculator input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      transition: border-color 0.3s ease;
+    }
+    .calculator input[type="text"]:focus {
+      border-color: #5563DE;
+      outline: none;
+    }
+    .btn-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .btn-group input[type="button"] {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      background: #5563DE;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-group input[type="button"]:hover {
+      background: #4450B5;
+    }
+    .resultado {
+      margin-top: 20px;
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      min-height: 50px;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculadora Básica</h1>
+    <p>Introduce el primer número:</p>
+    <input type="text" name="num1" class="num1">
+    <p>Introduce el segundo número:</p>
+    <input type="text" name="num2" class="num2">
+    
+    <div class="btn-group">
+      <input type="button" class="suma" value="Sumar">
+      <input type="button" class="resta" value="Restar">
+      <input type="button" class="multiplicacion" value="Multiplicar">
+      <input type="button" class="division" value="Dividir">
+    </div>
+    
+    <div class="resultado"></div>
+  </div>
+  
+  <script>
+    $(document).ready(function() {
+      // Función para obtener los valores de los inputs y convertirlos a números
+      function obtenerValores() {
+        var num1 = Number($('.num1').val());
+        var num2 = Number($('.num2').val());
+        return { num1: num1, num2: num2 };
+      }
+      
+      // Sumar
+      $('.suma').click(function() {
+        var valores = obtenerValores();
+        var resultado = valores.num1 + valores.num2;
+        $('.resultado').html("El resultado de la suma es: " + resultado);
+      });
+      
+      // Restar
+      $('.resta').click(function() {
+        var valores = obtenerValores();
+        var resultado = valores.num1 - valores.num2;
+        $('.resultado').html("El resultado de la resta es: " + resultado);
+      });
+      
+      // Multiplicar
+      $('.multiplicacion').click(function() {
+        var valores = obtenerValores();
+        var resultado = valores.num1 * valores.num2;
+        $('.resultado').html("El resultado de la multiplicación es: " + resultado);
+      });
+      
+      // Dividir
+      $('.division').click(function() {
+        var valores = obtenerValores();
+        if (valores.num2 === 0) {
+          $('.resultado').html("Error: No se puede dividir entre 0");
+        } else {
+          var resultado = valores.num1 / valores.num2;
+          $('.resultado').html("El resultado de la división es: " + resultado);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
